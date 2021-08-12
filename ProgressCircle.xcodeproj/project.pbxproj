@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		433908F426A61036005A1B3D /* PositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433908F226A61036005A1B3D /* PositionViewController.swift */; };
+		433908F526A61036005A1B3D /* PositionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 433908F326A61036005A1B3D /* PositionViewController.xib */; };
+		43A339D6269DF1AC00EE33E6 /* CircleProgressConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A339D5269DF1AC00EE33E6 /* CircleProgressConfiguration.swift */; };
 		43BA2218269761DA001F67B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA2217269761DA001F67B1 /* AppDelegate.swift */; };
 		43BA221A269761DA001F67B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA2219269761DA001F67B1 /* SceneDelegate.swift */; };
 		43BA221C269761DA001F67B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA221B269761DA001F67B1 /* ViewController.swift */; };
 		43BA221F269761DA001F67B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BA221D269761DA001F67B1 /* Main.storyboard */; };
 		43BA2221269761DD001F67B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BA2220269761DD001F67B1 /* Assets.xcassets */; };
 		43BA2224269761DD001F67B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BA2222269761DD001F67B1 /* LaunchScreen.storyboard */; };
+		43BA222D26976304001F67B1 /* CircleProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA222C26976304001F67B1 /* CircleProgressBarView.swift */; };
+		43BB9124269CD8AE00D4492F /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BB9122269CD8AE00D4492F /* TestViewController.swift */; };
+		43BB9125269CD8AE00D4492F /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43BB9123269CD8AE00D4492F /* TestViewController.xib */; };
+		43EBB7772698E1A700C5C317 /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EBB7762698E1A700C5C317 /* UIColor+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		433908F226A61036005A1B3D /* PositionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionViewController.swift; sourceTree = "<group>"; };
+		433908F326A61036005A1B3D /* PositionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PositionViewController.xib; sourceTree = "<group>"; };
+		43A339D5269DF1AC00EE33E6 /* CircleProgressConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressConfiguration.swift; sourceTree = "<group>"; };
 		43BA2214269761DA001F67B1 /* ProgressCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BA2217269761DA001F67B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43BA2219269761DA001F67B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,10 @@
 		43BA2220269761DD001F67B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43BA2223269761DD001F67B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43BA2225269761DD001F67B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43BA222C26976304001F67B1 /* CircleProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressBarView.swift; sourceTree = "<group>"; };
+		43BB9122269CD8AE00D4492F /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		43BB9123269CD8AE00D4492F /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		43EBB7762698E1A700C5C317 /* UIColor+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +51,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		433908F126A61020005A1B3D /* PositionTest */ = {
+			isa = PBXGroup;
+			children = (
+				433908F226A61036005A1B3D /* PositionViewController.swift */,
+				433908F326A61036005A1B3D /* PositionViewController.xib */,
+			);
+			path = PositionTest;
+			sourceTree = "<group>";
+		};
+		43A339D2269DF10800EE33E6 /* TestView */ = {
+			isa = PBXGroup;
+			children = (
+				43BB9122269CD8AE00D4492F /* TestViewController.swift */,
+				43BB9123269CD8AE00D4492F /* TestViewController.xib */,
+			);
+			path = TestView;
+			sourceTree = "<group>";
+		};
+		43A339D3269DF11500EE33E6 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				43BA221B269761DA001F67B1 /* ViewController.swift */,
+				43BA221D269761DA001F67B1 /* Main.storyboard */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		43A339D4269DF12F00EE33E6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				43EBB7762698E1A700C5C317 /* UIColor+Utils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		43BA220B269761DA001F67B1 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +105,27 @@
 		43BA2216269761DA001F67B1 /* ProgressCircle */ = {
 			isa = PBXGroup;
 			children = (
+				43A339D4269DF12F00EE33E6 /* Utilities */,
+				43A339D3269DF11500EE33E6 /* MainView */,
+				43A339D2269DF10800EE33E6 /* TestView */,
+				433908F126A61020005A1B3D /* PositionTest */,
+				43BA222B269761E6001F67B1 /* ProgressComponent */,
 				43BA2217269761DA001F67B1 /* AppDelegate.swift */,
 				43BA2219269761DA001F67B1 /* SceneDelegate.swift */,
-				43BA221B269761DA001F67B1 /* ViewController.swift */,
-				43BA221D269761DA001F67B1 /* Main.storyboard */,
 				43BA2220269761DD001F67B1 /* Assets.xcassets */,
 				43BA2222269761DD001F67B1 /* LaunchScreen.storyboard */,
 				43BA2225269761DD001F67B1 /* Info.plist */,
 			);
 			path = ProgressCircle;
+			sourceTree = "<group>";
+		};
+		43BA222B269761E6001F67B1 /* ProgressComponent */ = {
+			isa = PBXGroup;
+			children = (
+				43BA222C26976304001F67B1 /* CircleProgressBarView.swift */,
+				43A339D5269DF1AC00EE33E6 /* CircleProgressConfiguration.swift */,
+			);
+			path = ProgressComponent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +187,8 @@
 			files = (
 				43BA2224269761DD001F67B1 /* LaunchScreen.storyboard in Resources */,
 				43BA2221269761DD001F67B1 /* Assets.xcassets in Resources */,
+				433908F526A61036005A1B3D /* PositionViewController.xib in Resources */,
+				43BB9125269CD8AE00D4492F /* TestViewController.xib in Resources */,
 				43BA221F269761DA001F67B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +200,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43A339D6269DF1AC00EE33E6 /* CircleProgressConfiguration.swift in Sources */,
+				43EBB7772698E1A700C5C317 /* UIColor+Utils.swift in Sources */,
 				43BA221C269761DA001F67B1 /* ViewController.swift in Sources */,
+				433908F426A61036005A1B3D /* PositionViewController.swift in Sources */,
+				43BA222D26976304001F67B1 /* CircleProgressBarView.swift in Sources */,
 				43BA2218269761DA001F67B1 /* AppDelegate.swift in Sources */,
+				43BB9124269CD8AE00D4492F /* TestViewController.swift in Sources */,
 				43BA221A269761DA001F67B1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,6 +357,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9VUUQV7X5U;
 				INFOPLIST_FILE = ProgressCircle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilmint.ProgressCircle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,6 +377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9VUUQV7X5U;
 				INFOPLIST_FILE = ProgressCircle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +385,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilmint.ProgressCircle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

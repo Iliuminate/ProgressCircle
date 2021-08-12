@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="ProgressCircle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="WWQ-Ky-sHc">
+                                <rect key="frame" x="38" y="752" width="338" height="31"/>
+                                <connections>
+                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZWv-kS-e1f"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vu-6x-73M">
+                                <rect key="frame" x="20" y="64" width="66" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="9TP-IA-Qxl"/>
+                                    <constraint firstAttribute="width" constant="66" id="nso-Ry-FdU"/>
+                                </constraints>
+                                <state key="normal" title="Detalles"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lsn-dH-tQx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hZ-vF-8hC">
+                                <rect key="frame" x="312" y="69" width="77" height="30"/>
+                                <state key="normal" title="Ubicaiones"/>
+                                <connections>
+                                    <action selector="locationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZOx-ar-0xq"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXa-jq-73m">
+                                <rect key="frame" x="284" y="393" width="120" height="120"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="ASW-IU-3co"/>
+                                    <constraint firstAttribute="height" constant="120" id="aKB-PB-YcQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WWQ-Ky-sHc" secondAttribute="trailing" constant="40" id="DKy-uH-krg"/>
+                            <constraint firstItem="2vu-6x-73M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ReB-ZV-Uc2"/>
+                            <constraint firstItem="2vu-6x-73M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TKT-e6-fGT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WWQ-Ky-sHc" secondAttribute="bottom" constant="80" id="WTi-iY-BLf"/>
+                            <constraint firstItem="WWQ-Ky-sHc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="eHZ-OI-GmE"/>
+                            <constraint firstItem="8hZ-vF-8hC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="fkr-Kl-MR8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8hZ-vF-8hC" secondAttribute="trailing" constant="25" id="gIE-Vb-zZE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bXa-jq-73m" secondAttribute="trailing" constant="10" id="gQ4-RY-j8K"/>
+                            <constraint firstItem="bXa-jq-73m" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="gwd-Y0-apm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="2vu-6x-73M" id="v3c-Y5-EY0"/>
+                        <outlet property="contentViewTest" destination="bXa-jq-73m" id="Xq2-FZ-wzT"/>
+                        <outlet property="sliderView" destination="WWQ-Ky-sHc" id="3L9-VW-dne"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="105"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
